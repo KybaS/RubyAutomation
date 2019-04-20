@@ -1,0 +1,358 @@
+[
+  {
+    "uri": "C:/Users/skyba/Downloads/CucumberWithRuby/CucumberWithRuby/features/support/index/documents/check_block_how_to_write_go_code.feature",
+    "id": "checking-important-go-land-documents",
+    "keyword": "Feature",
+    "name": "Checking important Go land documents",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "checking-important-go-land-documents;navigate-to-the-go-lang-site-and-check-documents;;2",
+        "keyword": "Scenario Outline",
+        "name": "navigate to the go lang site and check documents",
+        "description": "",
+        "line": 11,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-2.18.0/lib/capybara/cucumber.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26469
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-2.18.0/lib/capybara/cucumber.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33580
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-screenshot-1.0.21/lib/capybara-screenshot/cucumber.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 297877
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19754
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "open go land site",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/documents/check_block_how_to_write_go_code.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8638639440
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "navigate to the Documents",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/documents/check_block_how_to_write_go_code.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1957295853
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "open the How to Write Go Code page",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/documents/check_block_how_to_write_go_code.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2136386999
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "check the Your first program",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/documents/check_block_how_to_write_go_code.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 217274212
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-screenshot-1.0.21/lib/capybara-screenshot/cucumber.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34370
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-2.18.0/lib/capybara/cucumber.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 473208328
+            }
+          }
+        ]
+      },
+      {
+        "id": "checking-important-go-land-documents;navigate-to-the-go-lang-site-and-check-documents;;3",
+        "keyword": "Scenario Outline",
+        "name": "navigate to the go lang site and check documents",
+        "description": "",
+        "line": 12,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-2.18.0/lib/capybara/cucumber.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26469
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-2.18.0/lib/capybara/cucumber.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16592
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-screenshot-1.0.21/lib/capybara-screenshot/cucumber.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14617
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15802
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "open go land site",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/documents/check_block_how_to_write_go_code.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4246168597
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "navigate to the Documents",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/documents/check_block_how_to_write_go_code.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1357925107
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "open the How to Write Go Code page",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/documents/check_block_how_to_write_go_code.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1565965156
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "check the Your first library",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/documents/check_block_how_to_write_go_code.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 229781851
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-screenshot-1.0.21/lib/capybara-screenshot/cucumber.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33975
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-2.18.0/lib/capybara/cucumber.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 412567215
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uri": "C:/Users/skyba/Downloads/CucumberWithRuby/CucumberWithRuby/features/support/index/playground/try_go_lang.feature",
+    "id": "go-lang-playground-and-run-exist-code",
+    "keyword": "Feature",
+    "name": "Go lang playground and run exist code",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "go-lang-playground-and-run-exist-code;run-go-code-in-go-playground-and-check-output",
+        "keyword": "Scenario",
+        "name": "Run Go code in go playground and check output",
+        "description": "",
+        "line": 2,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-2.18.0/lib/capybara/cucumber.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30420
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-2.18.0/lib/capybara/cucumber.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19753
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-screenshot-1.0.21/lib/capybara-screenshot/cucumber.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16197
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16198
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "navigate to Go playground page",
+            "line": 3,
+            "match": {
+              "location": "features/step_definitions/playground/try_go_lang.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6097660328
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "run executing exist code",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/playground/try_go_lang.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3474854548
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "check output",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/playground/try_go_lang.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1694322140
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-screenshot-1.0.21/lib/capybara-screenshot/cucumber.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50172
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-2.18.0/lib/capybara/cucumber.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 674723942
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

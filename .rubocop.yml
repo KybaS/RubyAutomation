@@ -1,0 +1,267 @@
+AllCops:
+  Exclude:
+    - '**/Gemfile*'
+    - '**/vendor/bundle/**/*'
+    - '**/lib/tasks/cucumber.rake'
+    - '**/script/cucumber'
+    - 'vendor/**/*'
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+  TargetRubyVersion: 2.3
+
+Style/Documentation:
+  Enabled: false
+  Description: 'Document classes and non-namespace modules.'
+
+Style/AsciiComments:
+  Enabled: false
+  Description: 'Use only ascii symbols in comments.'
+
+Style/FormatString:
+  Enabled: false
+
+Style/DoubleNegation:
+  Enabled: false
+
+Style/GuardClause:
+  Enabled: false
+  Description: 'Check for conditionals that can be replaced with guard clauses'
+
+Style/AccessorMethodName:
+  Enabled: false
+  Description: Check the naming of accessor methods for get_/set_.
+
+Layout/MultilineOperationIndentation:
+  Description: >-
+                 Checks indentation of binary operations that span more than
+                 one line.
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+Metrics/ModuleLength:
+  Max: 300
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Description: >-
+                 A complexity metric that is strongy correlated to the number
+                 of test cases needed to validate a method.
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Description: >-
+                 A complexity metric geared towards measuring complexity for a
+                 human reader.
+  Enabled: false
+
+Metrics/ParameterLists:
+  Description: 'Avoid parameter lists longer than three or four parameters.'
+  Enabled: false
+
+Security/Eval:
+  Description: 'The use of eval represents a serious security risk.'
+  Enabled: false
+
+Lint/NestedMethodDefinition:
+  Enabled: false
+
+Lint/ShadowedException:
+  Enabled: false
+
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - '**/spec/**/*'
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/PredicateName:
+  NamePrefixBlacklist:
+    - is_
+    - have_
+
+Layout/MultilineMethodCallIndentation:
+  Enabled: false
+
+Style/SignalException:
+  EnforcedStyle: semantic
+
+Style/RedundantParentheses:
+  Enabled: false
+
+Style/NumericLiteralPrefix:
+  Enabled: false
+
+Performance/Casecmp:
+  Enabled: false
+
+##################### Rails ##################################
+
+Rails:
+  Enabled: true
+
+Rails/ActionFilter:
+  EnforcedStyle: action
+  SupportedStyles:
+    - action
+    - filter
+  Include:
+    - '**/app/controllers/**/*.rb'
+
+Rails/Date:
+  # The value `strict` disallows usage of `Date.today`, `Date.current`,
+  # `Date#to_time` etc.
+  # The value `flexible` allows usage of `Date.current`, `Date.yesterday`, etc
+  # (but not `Date.today`) which are overridden by ActiveSupport to handle current
+  # time zone.
+  EnforcedStyle: flexible
+  SupportedStyles:
+    - strict
+    - flexible
+  Exclude:
+    - '**/bin/**/*'
+    - !ruby/regexp /core\//
+    - '**/lib/**/*'
+    - '**/vendor/**/*'
+
+Rails/DynamicFindBy:
+  Whitelist:
+    - find_by_sql
+  Exclude:
+    - '**/bin/**/*'
+    - !ruby/regexp /core\//
+    - '**/lib/**/*'
+    - '**/vendor/**/*'
+    - '**/adapters/**/repositories/**/*'
+
+Rails/EnumUniqueness:
+  Include:
+    - '**/app/models/**/*.rb'
+
+Rails/Exit:
+  Include:
+    - '**/app/**/*.rb'
+    - '**/config/**/*.rb'
+    - '**/lib/**/*.rb'
+  Exclude:
+    - '**/lib/**/*.rake'
+
+Rails/FindBy:
+  Include:
+    - '**/app/models/**/*.rb'
+
+Rails/FindEach:
+  Include:
+    - '**/app/models/**/*.rb'
+
+Rails/HasAndBelongsToMany:
+  Include:
+    - '**/app/models/**/*.rb'
+
+Rails/NotNullColumn:
+  Include:
+    - '**/db/migrate/*.rb'
+
+Rails/Output:
+  Include:
+    - '**/app/**/*.rb'
+    - '**/config/**/*.rb'
+    - '**/db/**/*.rb'
+    - '**/lib/**/*.rb'
+  Exclude:
+    - '**/config/initializers/assets.rb'
+    - '**/lib/demo_data/populate.rb'
+
+Rails/ReadWriteAttribute:
+  Include:
+    - '**/app/models/**/*.rb'
+
+Rails/RequestReferer:
+  EnforcedStyle: referer
+  SupportedStyles:
+    - referer
+    - referrer
+
+Rails/SafeNavigation:
+  # This will convert usages of `try` to use safe navigation as well as `try!`.
+  # `try` and `try!` work slighly differently. `try!` and safe navigation will
+  # both raise a `NoMethodError` if the receiver of the method call does not
+  # implement the intended method. `try` will not raise an exception for this.
+  ConvertTry: false
+
+Rails/ScopeArgs:
+  Include:
+    - '**/app/models/**/*.rb'
+
+Rails/TimeZone:
+  # The value `strict` means that `Time` should be used with `zone`.
+  # The value `flexible` allows usage of `in_time_zone` instead of `zone`.
+  EnforcedStyle: flexible
+  SupportedStyles:
+    - strict
+    - flexible
+  Exclude:
+    - '**/bin/**/*'
+    - !ruby/regexp /core\//
+    - '**/lib/**/*'
+    - '**/vendor/**/*'
+
+Rails/Validation:
+  Include:
+    - '**/app/models/**/*.rb'
+
+Rails/Delegate:
+  Include:
+    - '**/app/models/**/*.rb'
+
+Rails/DelegateAllowBlank:
+  Description: 'Do not use allow_blank as an option to delegate.'
+  Enabled: true
+
+Rails/HttpPositionalArguments:
+  Description: 'Use keyword arguments instead of positional arguments in http method calls.'
+  Enabled: false
+
+Rails/OutputSafety:
+  Description: 'The use of `html_safe` or `raw` may be a security risk.'
+  Enabled: false
+
+Rails/PluralizationGrammar:
+  Description: 'Checks for incorrect grammar when using methods like `3.day.ago`.'
+  Enabled: true
+
+Rails/UniqBeforePluck:
+  EnforcedStyle: conservative
+  AutoCorrect: false
+
+Rails/SkipsModelValidations:
+  Enabled: false
+
+Security/JSONLoad:
+  Description: >-
+                 Prefer usage of `JSON.parse` over `JSON.load` due to potential
+                 security issues. See reference for more information.
+  Reference: 'http://ruby-doc.org/stdlib-2.3.0/libdoc/json/rdoc/JSON.html#method-i-load'
+  Enabled: true
+  # Autocorrect here will change to a method that may cause crashes depending
+  # on the value of the argument.
+  AutoCorrect: false
+
+Security/YAMLLoad:
+  Enabled: false
+
+Security/MarshalLoad:
+  Enabled: false

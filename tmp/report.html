@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Test Results</title><link rel="icon" href="http://reportbuilder.rajatthareja.com/rb.ico">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" media="screen,projection"/>
+<link href="https://cdn.rawgit.com/rajatthareja/ReportBuilder/v1.6/css/report.builder.min.css" rel="stylesheet">
+</head><body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script><header class="brown lighten-5">
+<div class="row brown lighten-1">
+<div class="col m6 hide-on-small-only">
+<h5 class="truncate white-text tooltipped" data-tooltip="Test Results">Test Results</h5>
+</div><div class="col m6 s12 brown lighten-1">
+<ul class="tabs brown lighten-1 row" style="overflow-x: hidden">
+<li class="tab col s3">
+<a class="brown lighten-3 active blue-text waves-effect waves-light tooltipped" data-tooltip="Results Overview" href="#overview"><i class="material-icons">assessment</i> Overview</a>
+</li>
+<li class="tab col s3">
+<a class="brown lighten-3 white-text waves-effect waves-light tooltipped" data-tooltip="Scenarios by Features" href="#features"><i class="material-icons">view_headline</i> Features</a>
+</li>
+<li class="tab col s3">
+<a class="brown lighten-3 white-text waves-effect waves-light tooltipped" data-tooltip="Scenarios Summary Table" href="#summary"><i class="material-icons">view_comfy</i> Summary</a>
+</li>
+<li class="tab col s3">
+<a class="brown lighten-3 white-text waves-effect waves-light tooltipped" data-tooltip="Failed Scenarios" href="#errors"><i class="material-icons">bug_report</i> Errors</a>
+</li>
+</ul>
+</div>
+</div>
+</header>
+<div id="g0f0s0" class="modal modal-fixed-footer">
+<div class="modal-content"><h5>navigate to the go lang site and check documents (13.423s)</h5>
+C:/Users/skyba/Downloads/CucumberWithRuby/CucumberWithRuby/features/support/index/documents/check_block_how_to_write_go_code.feature:11<ul class="collection stepList"><li class="collection-item step passed">
+<b>Given </b> open go land site (8.639s)</li>
+<li class="collection-item step passed">
+<b>When </b> navigate to the Documents (1.957s)</li>
+<li class="collection-item step passed">
+<b>And </b> open the How to Write Go Code page (2.136s)</li>
+<li class="collection-item step passed">
+<b>Then </b> check the Your first program (0.217s)</li>
+</ul>
+</div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f0s1" class="modal modal-fixed-footer">
+<div class="modal-content"><h5>navigate to the go lang site and check documents (7.813s)</h5>
+C:/Users/skyba/Downloads/CucumberWithRuby/CucumberWithRuby/features/support/index/documents/check_block_how_to_write_go_code.feature:12<ul class="collection stepList"><li class="collection-item step passed">
+<b>Given </b> open go land site (4.246s)</li>
+<li class="collection-item step passed">
+<b>When </b> navigate to the Documents (1.358s)</li>
+<li class="collection-item step passed">
+<b>And </b> open the How to Write Go Code page (1.566s)</li>
+<li class="collection-item step passed">
+<b>Then </b> check the Your first library (0.230s)</li>
+</ul>
+</div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f1s0" class="modal modal-fixed-footer">
+<div class="modal-content"><h5>Run Go code in go playground and check output (11.942s)</h5>
+C:/Users/skyba/Downloads/CucumberWithRuby/CucumberWithRuby/features/support/index/playground/try_go_lang.feature:2<ul class="collection stepList"><li class="collection-item step passed">
+<b>Given </b> navigate to Go playground page (6.098s)</li>
+<li class="collection-item step passed">
+<b>When </b> run executing exist code (3.475s)</li>
+<li class="collection-item step passed">
+<b>Then </b> check output (1.694s)</li>
+</ul>
+</div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function () {$('#g0f0s0').modal();$('#g0f0s1').modal();$('#g0f0s2').modal();$('#g0f1s0').modal();$('#g0f1s1').modal();});
+</script>
+<main class="brown lighten-5">
+<div class="row"><div id="overview" class="col s12 brown lighten-5">
+<div class="row">
+<div class="col m4 s12">
+<canvas id="featuresDoughnut" width="400" height="400"></canvas>
+<table id="metaDataFeatures" class="bordered">
+<tbody></tbody>
+</table>
+</div><div class="col m4 s12">
+<canvas id="scenariosDoughnut" width="400" height="400"></canvas>
+<table id="metaDataScenarios" class="bordered">
+<tbody></tbody>
+</table>
+</div><div class="col m4 s12">
+<table id="metaData" class="bordered">
+<tbody>
+<tr><th>Total Time</th><td>33.177s</td></tr></tbody>
+</table>
+</div>
+</div></div><div id="features" class="col s12 brown lighten-5 white-text">
+<ul class="featureList collapsible popout" data-collapsible="expandable">
+<li class="feature working">
+<div class="collapsible-header brown lighten-1 waves-effect waves-light">
+<i class="material-icons">featured_play_list</i>
+<b>Feature</b>&nbsp;Checking important Go land documents&nbsp;(21.236s)
+</div><div class="collapsible-body brown lighten-4">
+<ul class="collection scenarioList"><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s0">
+<b>Scenario Outline</b> navigate to the go lang site and check documents&nbsp;(13.423s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s1">
+<b>Scenario Outline</b> navigate to the go lang site and check documents&nbsp;(7.813s)
+</a>
+</li></ul>
+</div>
+</li><li class="feature working">
+<div class="collapsible-header brown lighten-1 waves-effect waves-light">
+<i class="material-icons">featured_play_list</i>
+<b>Feature</b>&nbsp;Go lang playground and run exist code&nbsp;(11.942s)
+</div><div class="collapsible-body brown lighten-4">
+<ul class="collection scenarioList"><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f1s0">
+<b>Scenario</b> Run Go code in go playground and check output&nbsp;(11.942s)
+</a>
+</li></ul>
+</div>
+</li>
+</ul></div><div id="summary" class="col s12 brown lighten-5">
+<table id="summaryTable" class="bordered brown lighten-1 white-text" width="100%">
+<thead>
+<tr>
+<th class="hide-on-small-only">Feature</th>
+<th>Scenario</th>
+<th class="hide">Tags</th>
+<th>Status</th>
+<th class="hide-on-small-only">Error</th>
+</tr>
+</thead>
+<tbody><tr class="passed">
+<td class="hide-on-small-only">
+Checking important Go land documents
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f0s0">navigate to the go lang site and check documents</a>
+</td><td class="hide"></td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+Checking important Go land documents
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f0s1">navigate to the go lang site and check documents</a>
+</td><td class="hide"></td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+Go lang playground and run exist code
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f1s0">Run Go code in go playground and check output</a>
+</td><td class="hide"></td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+</tbody>
+</table></div><div id="errors" class="col s12 brown lighten-5">
+<ul class="errorList collapsible popout" data-collapsible="expandable"></ul></div>
+</div>
+</main><footer class="page-footer brown lighten-4">
+<div class="footer-copyright brown lighten-1">
+<div class="container">
+Happy Reporting!
+<a class="white-text text-lighten-4 right" href="http://reportbuilder.rajatthareja.com">Generated by Report Builder</a>
+</div>
+</div>
+</footer><script type="text/javascript" src="https://cdn.rawgit.com/rajatthareja/ReportBuilder/v1.6/js/report.builder.min.js"></script></body>
+</html>
