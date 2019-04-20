@@ -47,7 +47,7 @@ Capybara.configure do |config|
   config.run_server = false
 end
 
-@browser = ENV.fetch('BROWSER', 'chrome_selenoid').downcase
+@browser = ENV.fetch('BROWSER', 'chrome').downcase
 if @browser == 'firefox'
   Capybara.register_driver :selenium do |app|
     options = Selenium::WebDriver::Firefox::Options.new
@@ -134,7 +134,6 @@ Capybara.default_driver = :appium if @browser == 'android_chrome'
 
 require "#{File.dirname(__FILE__)}/../../page_objects/pages/home_page.rb"
 Dir["#{File.dirname(__FILE__)}/../../page_objects/*.rb"].each { |f| require f }
-Dir["#{File.dirname(__FILE__)}/../../page_objects/sections/*.rb"].each { |f| require f }
 Dir["#{File.dirname(__FILE__)}/../../page_objects/pages/*.rb"].each { |f| require f }
 Dir["#{File.dirname(__FILE__)}/../../lib/**/*.rb"].each { |f| require f }
 
